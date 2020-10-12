@@ -1,5 +1,7 @@
 body{
     background-color: #232323;
+    margin:0;
+    font-family: "微軟正黑體";
 }
 .square{
     width: 30%;
@@ -7,18 +9,35 @@ body{
     padding-bottom: 30%;
     float: left;  /* CSS float 用來定義區塊的浮動，可以設定為靠左浮動或靠右浮動，常見用法像是文字繞圖片的特效或是 DIV 區塊排版上使用*/
     margin: 1.66%;
+    border-radius:15%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: all 0.3s;
 } 
 
 #container{
     max-width: 600px;
-    margin: 0 auto;/*為 auto 來使其水平居中*/
+    margin: 20px auto;/*為 auto 來使其水平居中*/
 }
 h1{
+    text-align: center;
+    line-height: 1.1;
+    font-weight:normal;
     color:white;
+    background: steelblue;
+    margin:0;
+    text-transform: uppercase;
+    padding: 20px 0;/*上跟下 也可以寫成padding-top......*/
 }
 
+#colorDisplay{
+    font-size: 200%;
+}
 
-
+#message{
+    display:inline-block;/*用來做不會換行的動作*/
+    width: 20%;
+}
 #stripe{
     background-color: white;
     height: 30px;
@@ -28,5 +47,23 @@ h1{
 
 .selected{
 
-    background-color: blue;
+    color:white;
+    background: steelblue;
+}
+
+button{
+    border:none;
+    background: none;
+    text-transform: uppercase;
+    height:100%;
+    font-weight:700;
+    color:steelblue;
+    letter-spacing: 1px;/*字符間距*/
+    font-size: inherit;
+    transition: all 0.3s;/*字符間距*/
+}
+
+button:hover{
+    color:white;
+    background: steelblue;
 }
