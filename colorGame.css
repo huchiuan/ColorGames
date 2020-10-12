@@ -1,0 +1,32 @@
+body{
+    background-color: #232323;
+}
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;  /* CSS float 用來定義區塊的浮動，可以設定為靠左浮動或靠右浮動，常見用法像是文字繞圖片的特效或是 DIV 區塊排版上使用*/
+    margin: 1.66%;
+} 
+
+#container{
+    max-width: 600px;
+    margin: 0 auto;/*為 auto 來使其水平居中*/
+}
+h1{
+    color:white;
+}
+
+
+
+#stripe{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected{
+
+    background-color: blue;
+}
